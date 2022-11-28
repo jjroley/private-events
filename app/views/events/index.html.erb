@@ -1,1 +1,15 @@
 <h1>All Events</h1>
+
+<div class='event-grid'>
+  <% @events.each_with_index do |event, index| %>
+    <% colors = ['cyan', 'pink', 'yellow', 'blue', 'purple'] %>
+    <%= link_to(event, class: colors[index % colors.length] + ' event-card') do %>
+      <div class='event-card__location'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#faa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span class='event-card__location-name'>Des Moins, Iowa</span>
+      </div>
+      <h3><%= event.title %></h3>
+      <p><%= truncate(event.body, length: 50) %></p>
+    <% end %>
+  <% end %>
+</div>

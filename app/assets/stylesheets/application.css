@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+  cursor: pointer;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 1em;
+  padding: 1em;
+}
+
+.event-grid > .event-card {
+  display: block;
+  width: 100%;
+  padding: 1em;
+}
+
+.event-card h3 {
+  line-height: 30px;
+}
+
+.event-card__location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+  color: #aaa;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .event-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
