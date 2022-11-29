@@ -1,2 +1,16 @@
-<h1><%= @event.title %></h1>
-<p><%= @event.body %></p>
+<div class='container'>
+  <%= link_to events_path, class: 'btn cyan flex-center' do %>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+    <span style='margin-left: 0.7em'>See all events</span>
+  <% end %>
+
+  <h1><%= @event.title %></h1>
+
+  <div class='flex-center'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#faa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    <p style='margin-left: 0.5em'><%= @event.location %></p>
+  </div>
+
+  <p style='white-space: pre-wrap'><%= @event.body %></p>
+
+</div>

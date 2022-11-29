@@ -18,6 +18,11 @@ a {
   cursor: pointer;
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .event-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -105,4 +110,9 @@ a {
   .auth-container {
     text-align: left;
   }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
 }

@@ -7,7 +7,12 @@
         <span class='event-card__location-name'><%= event.location %></span>
       </div>
       <h3><%= event.title %></h3>
-      <p><%= truncate(event.body, length: 50) %></p>
+      <p style='line-height: 20px; margin: 8px 0;'><%= truncate(event.body, length: 100) %></p>
+
+      <div class='flex-center'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <p style='margin-left: 0.6em;'>Happening in <%= distance_of_time_in_words(Time.now, event.date) %> </p>
+      </div>
     <% end %>
   <% end %>
 </div>
