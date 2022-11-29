@@ -42,9 +42,9 @@
 .event__header {
   display: flex;
   align-items: end;
+  gap: 0.5em;
 }
 
 .event__subscribe-btn {
   margin-left: auto;
-  margin-right: 0.5em;
 }

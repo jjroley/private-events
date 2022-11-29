@@ -23,6 +23,7 @@
     <%= link_to is_subscribed ? "Subscribed" : "Subscribe", attend_event_path, class: 'btn yellow event__subscribe-btn', method: :post %>
     <% if user_signed_in? && current_user == @event.creator %>
       <%= link_to "Edit", edit_event_path, class: 'btn cyan', method: :post %>
+      <%= button_to "Delete", event_path, class: 'btn pink', method: :delete %>
     <% end %>
   </div>
   <hr>
