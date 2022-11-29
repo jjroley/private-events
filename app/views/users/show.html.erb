@@ -1,0 +1,5 @@
+<div class='container'>
+  <h3>Events by <%= @user.username %></h3>
+  <hr>
+  <%= render 'events/grid', events: @user.created_events %>
+</div>

@@ -1,0 +1,34 @@
+.site-header {
+  background: var(--white);
+  padding: 1em;
+  border-bottom: 2px solid black;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0;
+}
+
+.site-header .btn span {
+  display: none;
+}
+
+.site-header .btn {
+  gap: 0.5em;
+}
+
+.site-header .logo {
+  margin-right: auto;
+}
+
+.site-header .logo h3 {
+  line-height: 25px;
+}
+
+@media (min-width: 600px) {
+  .site-header .btn span {
+    display: inline;
+  }
+}
