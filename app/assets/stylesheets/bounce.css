@@ -61,6 +61,14 @@ html, body {
 	transform: none !important
 }
 
+.rainbow {
+	background: linear-gradient(90.02deg, #70F1D5 0.02%, #E065B3 27.09%, #FAE560 51.04%, #54B8F3 76.56%, #9260DE 99.99%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
 /* fix for glitch effect when hovering on bottom of elements (thanks to @nathanTi!) */
 card, .btn, table tr, a, .switch-container {
   position: relative;

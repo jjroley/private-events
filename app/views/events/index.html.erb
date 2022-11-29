@@ -1,5 +1,7 @@
 <div class='container'>
-  <h1>All Events</h1>
-
-  <%= render 'grid', events: @events %>
+  <h2>Upcoming Events</h2>
+  <%= render 'grid', events: Event.upcoming %>
+  <hr>
+  <h2>Past Events</h2>
+  <%= render 'grid', events: Event.past %>
 </div>
