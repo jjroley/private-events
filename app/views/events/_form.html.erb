@@ -1,0 +1,21 @@
+<%= form_with model: event do |f| %>
+    <div class='form'>
+      <div class='field'>
+        <%= f.text_field :title, class: 'input', placeholder: "give it a title" %>
+      </div>
+
+      <div class='field'>
+        <%= f.text_field :location, class: 'input', placeholder: 'location' %>
+      </div>
+      
+      <div class='field'>
+        <%= f.text_area :body, rows: 8, cols: 40, class: 'input', placeholder: "share some awesome details" %>
+      </div>
+
+      <div class='field'>
+        <p><%= f.label "When's it happening?" %></p>
+        <%= f.date_select :date, class: 'input' %>
+      </div>
+      <%= f.submit "Ship it!", class: 'btn yellow' %>
+    </div>
+  <% end %>

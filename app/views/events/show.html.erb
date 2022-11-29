@@ -20,7 +20,10 @@
         <p style='margin-left: 0.6em;'><%= @event.attendees.length %> attendees</p>
       </div>
     </div>
-    <%= link_to is_subscribed ? "Subscribed" : "Subscribe", attend_event_path, class: 'btn yellow', method: :post %>
+    <%= link_to is_subscribed ? "Subscribed" : "Subscribe", attend_event_path, class: 'btn yellow event__subscribe-btn', method: :post %>
+    <% if user_signed_in? && current_user == @event.creator %>
+      <%= link_to "Edit", edit_event_path, class: 'btn cyan', method: :post %>
+    <% end %>
   </div>
   <hr>
   <p style='white-space: pre-wrap'><%= @event.body %></p>
