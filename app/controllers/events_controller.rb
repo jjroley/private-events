@@ -24,7 +24,15 @@ class EventsController < ApplicationController
   end
 
   def attend
-    
+    @event = Event.find(params[:id])
+
+    if @event.attendees.include?(current_user)
+      @event.attendees.delete(current_user)
+      redirect_to @event, notice: "You've just left this event"
+    else
+      @event.attendees << current_user
+      redirect_to @event, notice: "You've subscribed to this event"
+    end
   end
 
   private
