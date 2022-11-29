@@ -23,6 +23,10 @@ class EventsController < ApplicationController
     end
   end
 
+  def attend
+    
+  end
+
   private
 
   def event_params
