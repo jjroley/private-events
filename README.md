@@ -1,24 +1,9 @@
-# README
+# Evently
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was made for a [coding challenge](https://www.theodinproject.com/lessons/ruby-on-rails-private-events) from a course on Rails.
 
-Things you may want to cover:
+I used a modified version of [bounce.css](https://replit.com/@Bookie0/bouncecss?v=1) by [@Bookie0](https://replit.com/@Bookie0)
 
-* Ruby version
+Right now it's just running in dev mode so it's liable to crash, or show weird rails errors.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Anyway, enjoy :)
