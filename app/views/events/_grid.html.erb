@@ -4,9 +4,9 @@
     <%= link_to(event, class: colors[index % colors.length] + ' event-card') do %>
       <div class='event-card__location'>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#faa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span class='event-card__location-name'><%= event.location %></span>
+        <span class='event-card__location-name'><%= truncate(event.location, length: 50) %></span>
       </div>
-      <h3><%= event.title %></h3>
+      <h3><%= truncate(event.title, length: 30) %></h3>
       <p style='line-height: 20px; margin: 8px 0;'><%= truncate(event.body, length: 100) %></p>
 
       <div class='flex-center'>
