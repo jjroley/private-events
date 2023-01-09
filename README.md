@@ -2,7 +2,7 @@
 
 Live version here [https://evently.jjroley.repl.co](https://evently.jjroley.repl.co)
 
-This was made for a [coding challenge](https://www.theodinproject.com/lessons/ruby-on-rails-private-events) from a course on Rails.
+This was made for an Odin Project [coding challenge](https://www.theodinproject.com/lessons/ruby-on-rails-private-events) from their course on Rails.
 
 I used a modified version of [bounce.css](https://replit.com/@Bookie0/bouncecss?v=1) by [@Bookie0](https://replit.com/@Bookie0)
 
